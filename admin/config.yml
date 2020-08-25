@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: master
+
+# local_backend: true
+
+site_url: https://docs.nml.co.za/
+
+media_folder: "static/images/"
+
+collections:
+  - name: "docs"
+    label: "Documents"
+    folder: "docs"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" 
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "docs"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Post author"
+        name: "site"
+        file: "_data/site.json"
+        widget: "object"
+        fields:
+          - {label: "Author name", name: "author", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["getting-started", "communication", "working-at-nml", "development", "front-end", "qa"]}
+      - {label: "Snippet", name: "snippet", widget: "string"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: {name: tag, label: Tag, widget: string}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+
+  - name: "posts"
+    label: "Blog"
+    folder: "posts"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" 
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Post author"
+        name: "site"
+        file: "_data/site.json"
+        widget: "object"
+        fields:
+          - {label: "Author name", name: "author", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["news"]}
+      - {label: "Snippet", name: "snippet", widget: "string"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: {name: tag, label: Tag, widget: string}
+      - {label: "Body", name: "body", widget: "markdown"}

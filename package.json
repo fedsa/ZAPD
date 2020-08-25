@@ -1,0 +1,43 @@
+{
+  "name": "nml-docs",
+  "version": "1.0.0",
+  "description": "NML docs and internal blog site using Eleventy and Netlfiy CMS.",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "serve": "gulp build & gulp watch & npx eleventy --serve --watch",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NewMediaLabs/nmldocs"
+  },
+  "author": {
+    "name": "Justin Slack",
+    "email": "justin@jnml.co.za",
+    "url": "https://nml.co.za"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NewMediaLabs/nmldocs/issues"
+  },
+  "homepage": "https://docs.nml.co.za",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1",
+    "luxon": "^1.21.1",
+    "markdown-it": "^10.0.0",
+    "markdown-it-link-attributes": "^3.0.0"
+  },
+  "dependencies": {
+    "clean-css": "^4.2.1",
+    "html-minifier": "^4.0.0",
+    "uglify-es": "^3.3.9"
+  }
+}

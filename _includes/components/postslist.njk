@@ -1,0 +1,9 @@
+{% for post in postslist | reverse %}
+<a href="{{ post.url | url }}" class="flex flex--column docs--card {{ post.data.category }}">
+	<span class="docs--card-category">{{ post.data.category }}</span>
+	<h2 class="docs--card-name">
+		{{ post.data.title }}
+	</h2>
+	<p class="docs--summary">{{ post.data.snippet }}</p>
+</a>
+{% endfor %}

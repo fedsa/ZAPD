@@ -1,0 +1,26 @@
+---
+title: Tags
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - docs
+    - posts
+permalink: /tags/{{ tag }}/
+layout: layouts/base.njk
+renderData:
+  title: "View all “{{ tag }}”"
+---
+
+<section class="container content--container single--page">
+<h1 class="page--title">View all <span class="page--tag">“{{ tag }}”</span></h1>
+
+<div class="grid three--column--grid list--shows">
+{% set postslist = collections[ tag ] %}
+{% include "components/postslist.njk" %}
+</div>
+
+</article>

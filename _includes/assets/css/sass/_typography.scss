@@ -1,0 +1,93 @@
+// Type styles
+
+h1,
+.h1 {
+	font-family: "Jost", Avenir, 'Segoe UI', sans-serif;
+	font-size: 3em;
+	line-height: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	letter-spacing: 0.01em;
+}
+h2,
+.h2 {
+	font-family: "Jost", Avenir, 'Segoe UI', sans-serif;
+	font-size: calc(1.6vw + 1rem);
+	line-height: 1.5em;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	letter-spacing: 0.02em;
+}
+h3,
+.h3 {
+	line-height: 1.125em;
+	margin-top: 1.125em;
+	margin-bottom: 0.5em;
+}
+h4,
+.h4 {
+	line-height: 1.6875em;
+	margin-top: 1.6875em;
+	margin-bottom: 0em;
+}
+h5,
+.h5 {
+	line-height: 1.6875em;
+	margin-top: 1.6875em;
+	margin-bottom: 0em;
+}
+p,
+ul,
+ol,
+table,
+blockquote {
+	margin-top: 0em;
+	margin-bottom: 1.6875em;
+}
+hr,
+.hr {
+	border: 1px solid #3F6994;
+	margin: -1px 0 2rem;
+}
+b,
+i,
+strong,
+em,
+small,
+code {
+	line-height: 0;
+}
+sub,
+sup {
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: 80%;
+}
+
+ol,
+.list-ordered {
+	list-style: decimal;
+}
+
+.weight-300 {
+	font-weight: 300;
+}
+
+// blockquotes
+
+blockquote {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid lighten(black, 40%);
+	font-size: 16px;
+	margin: 0 0 4rem;
+}

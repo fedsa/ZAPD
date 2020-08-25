@@ -1,0 +1,31 @@
+// Forms etc
+
+.join-form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+label {
+  display: block;
+  font-size: calc(-.12vw + 1rem);
+}
+
+.text-input {
+  background: #fafafa;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #000;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: normal;
+  margin: 6px 0 4px;
+  padding: 12px;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 0 4px var(--accent);
+    outline: none;
+  }
+
+}

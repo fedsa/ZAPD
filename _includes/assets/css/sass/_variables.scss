@@ -1,0 +1,28 @@
+// Colours mostly
+
+:root {
+	--blue:#0B0D63;
+	--base: #333333;
+	--accent: #F08E80;
+  --linen: #FDF0E6;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.color-white {
+  color: white;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-linen {
+  background-color:var(--linen);
+}
+
+.color-accent {
+  color: var(--accent);
+}

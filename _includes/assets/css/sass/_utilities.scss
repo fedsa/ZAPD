@@ -1,0 +1,69 @@
+// Utility classes
+
+/* Utilities */
+
+.is-hidden {
+	display: none;
+}
+
+.is-visually-hidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+/* layout */
+
+.block {
+	display: block;
+}
+
+.grid {
+	display: grid;
+}
+
+.three--column--grid {
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));;
+	grid-gap: 2rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex--center-all {
+	align-items: center;
+  justify-content: center;
+}
+
+.flex--center-hor {
+	align-items: center;
+	text-align: center;
+}
+
+.flex--center-vert {
+	justify-content: center;
+}
+
+
+.flex--column {
+	flex-direction: column;
+}
+
+.divider {
+	margin: 4rem 0;
+	width: 100%;
+}
+
+.textual--content {
+	max-width: 75ch;
+}
+

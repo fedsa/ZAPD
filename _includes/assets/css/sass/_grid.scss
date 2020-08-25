@@ -1,0 +1,101 @@
+/* ==============Non critical CSS =============== */
+
+/* Home page */
+
+/* Grid articles */
+
+.home-section {
+  padding: 6rem 0 0;
+}
+
+.three-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
+}
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
+}
+
+// Padding and margins
+
+.m-0 {
+  margin: 0;
+}
+
+.m-l-auto {
+  margin-left: auto;
+}
+
+.m-t-0 {
+  margin-top: 0;
+}
+
+.m-t-8 {
+  margin-top: 0.5rem;
+}
+
+.m-t-16 {
+  margin-top: 1rem;
+}
+
+.m-b-0 {
+  margin-bottom: 0;
+}
+
+.m-b-8 {
+  margin-bottom: 0.5rem;
+}
+
+.p-16 {
+  padding: 1rem;
+}
+
+.p-lr-16 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.p-lr-32 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.p-t-8 {
+  padding-top: 0.5rem;
+}
+
+.p-t-16 {
+  padding-top: 1rem;
+}
+
+.p-t-64 {
+  padding-top: 4rem;
+}
+
+@include breakpoint(768px) {
+  .p-b-48-d {
+    padding-bottom: 3rem;
+  }
+}
+
+.p-spacing {
+  padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+// Widths
+
+.content-50 {
+  max-width: 800px;
+}
