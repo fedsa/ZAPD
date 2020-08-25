@@ -1,8 +1,8 @@
 {
-  "name": "Justin Slack",
-  "short_name": "Justin Slack",
+  "name": "ZA Product Design",
+  "short_name": "ZAPD",
   "lang": "en-GB",
-  "start_url": "https://justinslack.com",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#ffffff",
   "icons": [

@@ -3,7 +3,7 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginPWA = require("eleventy-plugin-pwa");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
@@ -46,8 +46,8 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-  //  Syntax highlighting
-  eleventyConfig.addPlugin(syntaxHighlight);
+  //  PWA
+  eleventyConfig.addPlugin(pluginPWA);
 
 
   // only content in the `posts/` directory
