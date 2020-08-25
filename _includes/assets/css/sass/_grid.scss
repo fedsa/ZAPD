@@ -55,14 +55,35 @@
   padding: 1rem;
 }
 
+.p-r-16 {
+  padding-right: 1rem;
+}
+
 .p-lr-16 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
+.p-r-32 {
+  padding-right: 2rem;
+}
+
+
 .p-lr-32 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.p-b-8 {
+  padding-bottom: 0.5rem;
+}
+
+.p-b-16 {
+  padding-bottom: 1rem;
+}
+
+.p-b-64 {
+  padding-bottom: 4rem;
 }
 
 .p-t-8 {
@@ -97,5 +118,5 @@
 // Widths
 
 .content-50 {
-  max-width: 800px;
+  max-width: 800px !important;
 }

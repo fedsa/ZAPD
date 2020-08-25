@@ -7,6 +7,10 @@
   --linen: #FDF0E6;
 }
 
+a {
+  color: var(--accent);
+}
+
 .bg-black {
   background-color: black;
 }
@@ -20,7 +24,11 @@
 }
 
 .bg-linen {
-  background-color:var(--linen);
+  background-color: var(--linen);
+}
+
+.color-linen {
+  color: var(--linen);
 }
 
 .color-accent {

@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/coc.njk
 title: Code of conduct
 tags:
   - nav

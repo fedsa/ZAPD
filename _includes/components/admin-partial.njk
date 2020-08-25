@@ -1,0 +1,36 @@
+  <div class="bg-linen p-lr-16 p-t-64 p-b-64">   
+    <section class="center-split text-block">
+      <article class="left-copy p-r-32">
+        <h2 class="m-t-0">Contact us to become an Admin.</h2>    
+        <p>To help us monitor, build and administrate the #ZAPD Community, please make contact with us, or let us know if you have any questions or suggestions.</p>
+        <p class="bold">Your data is safe with us. We will only use it to communicate with you based on your request.</p>
+      </article>
+      <article class="right-copy">
+        <form name="contact" method="POST" action="/success-admin/" netlify="" data-netlify="true" netlify-honeypot="bot-field" class="grid join-form">
+          <p class="is-hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
+          <p>All fields are required.</p>
+          
+          <p>
+            <label for="name">First name</label>
+            <input class="text-input" type="text" name="name" id="name" autocomplete="name" placeholder="Your first name" title="Please enter your name" required="">
+          </p>
+          <p>
+            <label for="surName">Last name</label>
+            <input class="text-input" type="text" name="name" id="surName" autocomplete="name" placeholder="Your surname" title="Please enter your name" required="">
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input class="text-input" type="email" name="email" id="email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required="">
+          </p>
+          <p>
+            <label for="message">Message (optional)</label>
+            <textarea class="text-input" name="message" id="message" placeholder="Write your message here" rows="7" required></textarea>
+          </p>
+          <p>
+            <button type="submit" name="submit" class="btn--primary">Become an admin</button>
+          </p>
+          </form>
+      </article>
+    </section>
+  </div>
+</div>

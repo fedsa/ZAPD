@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/admin.njk
 title: Become an admin
 tags:
   - nav
