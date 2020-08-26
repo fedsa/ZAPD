@@ -24,7 +24,7 @@ gulp.task("watch", function() {
 
 
 /*
-  Let's build this sucker.
+  Let's build it.
 */
 gulp.task('build', gulp.parallel(
   'css'
