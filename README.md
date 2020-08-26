@@ -18,7 +18,7 @@ yarn serve
 
 ## Roadmap
   
-- [] Add form success pages
+- [ ] Add form success pages
 - [x] Link form to Google Docs
-- [] Replace workbox plugin
+- [ ] Replace workbox plugin
 - [x] Mobile menu
