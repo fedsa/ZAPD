@@ -14,3 +14,6 @@ posts/
 # node
 node_modules
 tmp
+
+# Misc
+zapd.code-workspace
