@@ -12,9 +12,11 @@
 }
 
 .main--nav li {
-  margin: 1rem 0;
+  margin: 0;
+  font-size: 2rem;
 
   @include breakpoint(48em) {
+    font-size: 1rem;
     margin: 0 1rem;
   }
 
@@ -26,10 +28,11 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  z-index: 100;
 }
 
 .menu-icon .navicon {
-  background: #333;
+  background: var(--accent);
   display: block;
   height: 2px;
   position: relative;
@@ -39,7 +42,7 @@
 
 .menu-icon .navicon:before,
 .menu-icon .navicon:after {
-  background: #333;
+  background: var(--accent);
   content: '';
   display: block;
   height: 100%;
@@ -63,8 +66,10 @@
 }
 
 .menu-btn:checked ~ ul {
-  background-color: white;
+  align-tems: center;
+  background-color: var(--blue);
   display: flex;
+  justify-content: center;
   left: 0;
   height: 100vh;
   position: fixed;
@@ -75,6 +80,7 @@
 
 .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
+  z-index: 100;
 }
 
 .menu-btn:checked ~ .menu-icon .navicon:before {
